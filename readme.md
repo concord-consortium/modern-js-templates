@@ -1,5 +1,5 @@
 # Template for Javascript project
-## Using Gulp and Browserify
+## Using Gulp, Browserify and Coffeescript
 
 ### Install Deps
   * [Node.js](http://nodejs.org): `brew install node` on OS X
@@ -13,6 +13,6 @@
 
 ### Notes
 
-  * `app.js` is the main entry point for the app. Require other files with
-    `require("relative/path/to/file");`
+  * `app.coffee` is the main entry point for the app. Require other files with
+    `require "relative/path/to/file"`
   * All files placed in `assets` will be copied as-is to `public`

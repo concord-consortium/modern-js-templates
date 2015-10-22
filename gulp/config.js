@@ -10,9 +10,13 @@ module.exports = {
   browserify: {
     app: {
       watch: [src + '/code/**/*.*'],
-      src: src + '/code/app.js',
+      src: src + '/code/app.coffee',
       dest: dest + '/js/'
     }
+  },
+  coffeelint: {
+    watch: src + '/code/**/*.coffee',
+    src: src + '/code/**/*.coffee',
   },
   assets: {
     watch: src + '/assets/**/*.*',
