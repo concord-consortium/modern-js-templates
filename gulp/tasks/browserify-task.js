@@ -1,5 +1,6 @@
 var gulp        = require('gulp');
 var browserify  = require('browserify');
+var babelify    = require('babelify');
 var source      = require("vinyl-source-stream");
 var production  = require('../config').production;
 var config      = require('../config').browserify;
@@ -14,7 +15,8 @@ var errorHandler = function (error) {
 gulp.task('browserify-app', function(){
   var b = browserify({
     debug: !production
-  });
+  })
+  .transform(babelify);
   b.add(config.app.src);
   return b.bundle()
     .on('error', errorHandler)

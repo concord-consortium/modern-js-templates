@@ -1,5 +1,5 @@
 # Template for Javascript project
-## Using Gulp and Browserify
+## Using Gulp, Browserify and Babel
 
 ### Install Deps
   * [Node.js](http://nodejs.org): `brew install node` on OS X
@@ -16,3 +16,4 @@
   * `app.js` is the main entry point for the app. Require other files with
     `require("relative/path/to/file");`
   * All files placed in `assets` will be copied as-is to `public`
+  * Write ES6/ES2015 in source, it is transformed into ES5 for today's browsers using babeljs.
